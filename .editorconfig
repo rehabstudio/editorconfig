@@ -12,14 +12,11 @@ charset = utf-8
 trim_trailing_whitespace = true
 insert_final_newline = false
 
-[*.py]
+[*.{js,py}]
 insert_final_newline = true
 
 [Makefile]
 indent_style = tab
-
-[*.js]
-insert_final_newline = true
 
 [*.go]
 indent_style = tab
@@ -32,3 +29,6 @@ trim_trailing_whitespace = false
 [**.min.js]
 indent_style = ignore
 insert_final_newline = ignore
+
+[{package.json,.travis.yml}]
+indent_size = 2
